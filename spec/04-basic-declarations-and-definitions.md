@@ -589,7 +589,7 @@ FunTypeParamClause ::=  ‘[’ TypeParam {‘,’ TypeParam} ‘]’
 ParamClauses       ::=  {ParamClause} [[nl] ‘(’ ‘implicit’ Params ‘)’]
 ParamClause        ::=  [nl] ‘(’ [Params] ‘)’
 Params             ::=  Param {‘,’ Param}
-Param              ::=  {Annotation} id [‘:’ ParamType] [‘=’ Expr]
+Param              ::=  {Annotation} id ‘:’ ParamType [‘=’ Expr]
 ParamType          ::=  Type
                      |  ‘=>’ Type
                      |  Type ‘*’
